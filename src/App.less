@@ -1,0 +1,147 @@
+@charset "UTF-8";
+@import "./style/normalize.css";
+html body,
+textarea,
+input,
+select {
+    font-family: Arial, CenturyGothic, "Microsoft YaHei";
+}
+
+blockquote,
+body,
+dd,
+div,
+dl,
+dt,
+fieldset,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+li,
+ol,
+p,
+pre,
+td,
+textarea,
+th,
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: 12px;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+button,
+input,
+select,
+textarea {
+    outline: 0;
+}
+
+textarea {
+    resize: none;
+}
+
+img {
+    border: 0;
+    font-size: 0;
+    line-height: 0;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+th {
+    font-weight: 400;
+}
+
+.clearfix:after,
+.clr:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix,
+.clr {
+    zoom: 1;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+.none {
+    display: none !important;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+// 自定义的表单提示信息样式
+.form_item_tip {
+    line-height: 40px;
+    color: #999;
+}
+
+// loading的外层div
+.global_mark {
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.3);
+}
+.global_mark div {
+    margin-top: 400px;
+    transform: translateY(-50%);
+}
+// 组件最外层Card组件的样式
+.main_card {
+    height: calc(~"100vh - 112px");
+    overflow-y: auto;
+    overflow-x: hidden;
+}
